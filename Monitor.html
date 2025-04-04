@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MONITOR</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="auth" class="auth-container">
+        <p>Ingrese la contraseña:</p>
+        <input type="password" id="passwordInput" autocomplete="off">
+        <button onclick="autenticacion()">Ingresar</button>
+    </div>
+    <div id="content" style="display: none;">
+        <div class="tab">
+            <button class="tab-link active" onclick="openTab(event, 'competenciaLocal')">Competencia Local</button>
+            <button class="tab-link" onclick="openTab(event, 'competenciaInvación')">Competencia Invación</button>
+            <button class="tab-link" onclick="openTab(event, 'web')">Web</button>
+        </div>
+        <div id="competenciaLocal" class="tab-content" style="display: block;">
+            <table>
+                <tr>
+                    <td><p>autosolsalta</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fautosolsalta&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>DycarChevroletSaltayJujuy</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDycarChevroletSaltayJujuy&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>gcenoa</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgcenoa&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>autoluxsalta</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fautoluxsalta&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>hpussetto</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhpussetto&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>luisplazaok</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fluisplazaok&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>#####--Agregar-sitio--#####</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F#####--Agregar-sitio--#####&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="competenciaInvación" class="tab-content">
+            <table>
+                <tr>
+                    <td><p>PiazzaTucuman</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPiazzaTucuman&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>taraborellioficial</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftaraborellioficial&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>ConcesionarioGiamaFiatBsAs</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FConcesionarioGiamaFiatBsAs&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>ScuderiaConcesionarioOficialFiat</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FScuderiaConcesionarioOficialFiat&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>#####--Agregar-sitio--#####</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F#####--Agregar-sitio--#####&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="web" class="tab-content">
+            <table>
+                <tr>
+                    <td><p>#####--Agregar-sitio--#####</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F#####--Agregar-sitio--#####&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>#####--Agregar-sitio--#####</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F#####--Agregar-sitio--#####&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>#####--Agregar-sitio--#####</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F#####--Agregar-sitio--#####&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                    <td><p>#####--Agregar-sitio--#####</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F#####--Agregar-sitio--#####&amp;tabs=timeline" loading="lazy"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
