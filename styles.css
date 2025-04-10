@@ -16,19 +16,16 @@ body {
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
 }
 
 input[type="password"], button {
-    padding: 12px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
-    margin: 10px 5px;
+    margin: 5px;
     cursor: pointer;
-    font-size: 16px;
-    width: 80%;
-    max-width: 300px;
+    width: 250px; /* más ancho para mobile */
+    max-width: 90vw;
 }
 
 input[type="password"] {
@@ -48,9 +45,7 @@ button:hover {
 .tab {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -74,13 +69,13 @@ button:hover {
     display: none;
     width: 90%;
     max-width: 1600px;
-    height: 500px;
+    height: 650px;
+    max-height: 650px;
     margin: auto;
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
     border-radius: 5px;
     overflow-y: auto;
-    overflow-x: hidden;
 }
 
 table {
@@ -108,20 +103,20 @@ td {
 
 iframe {
     width: 100%;
-    height: 350px;
+    height: 500px;
     border: none;
 }
 
-/* Notebooks */
+/* Responsive Desktop menor a 1366 */
 @media (max-width: 1366px) {
     .tab-content {
-        height: 450px;
+        max-height: 600px;
     }
     iframe {
-        height: 300px;
+        height: 450px;
     }
     td {
-        width: 30%;
+        width: 31%;
     }
 }
 
@@ -131,53 +126,40 @@ iframe {
         width: 48%;
     }
     iframe {
-        height: 280px;
+        height: 400px;
     }
 }
 
-/* Móviles grandes (como iPhone 12) */
-@media (max-width: 480px) {
-    body {
-        justify-content: flex-start;
-        padding-top: 40px;
+/* Mobile general */
+@media (max-width: 768px) {
+    td {
+        width: 100%;
     }
-
-    .auth-container {
-        width: 95%;
-        padding: 20px 10px;
+    iframe {
+        height: 400px;
     }
-
-    input[type="password"], button {
-        width: 90%;
-        font-size: 18px;
-    }
-
     .tab {
         flex-direction: column;
         align-items: center;
     }
-
     .tab button {
         width: 100%;
         text-align: center;
-        font-size: 16px;
-        padding: 12px;
+    }
+}
+
+/* Mobile muy chico - iPhone 12 como referencia */
+@media (max-width: 480px) {
+    input[type="password"], button {
+        width: 90vw;
     }
 
     .tab-content {
-        height: 550px; /* Más alto en mobile */
-        max-height: 550px;
-        overflow-y: auto;
-        padding: 10px 5px;
-    }
-
-    td {
-        width: 100%; /* Solo un iframe por fila */
-        min-width: unset;
-        margin: 10px 0;
+        height: 750px;
+        max-height: 750px;
     }
 
     iframe {
-        height: 300px;
+        height: 420px;
     }
 }
