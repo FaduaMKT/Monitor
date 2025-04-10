@@ -20,3 +20,10 @@ function autenticacion() {
         alert("Hubo un error con el servidor.");
     });
 }
+
+function openTab(event, tabName) {
+    document.querySelectorAll(".tab-content").forEach(tab => tab.style.display = "none");
+    document.querySelectorAll(".tab-link").forEach(link => link.classList.remove("active"));
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.classList.add("active");
+}
