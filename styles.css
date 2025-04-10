@@ -140,7 +140,7 @@ iframe {
     }
 }
 
-/* Pantallas medianas y móviles grandes (820px) */
+/* Solo media query para 820px */
 @media (max-width: 820px) {
     body {
         font-size: 18px;
@@ -163,57 +163,20 @@ iframe {
         padding: 12px 24px;
     }
 
-    .tab button {
-        font-size: 1.2rem;
-        padding: 12px 24px;
-    }
-}
-
-/* Móviles */
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-        overflow: auto;
-        min-height: 100vh;
-        max-width: 390px;
-        margin: 0 auto;
-        font-size: 18px;
-    }
-
-    .auth-container {
-        padding: 20px;
-        width: 95%;
-        max-width: 360px;
-        border-radius: 12px;
-        box-sizing: border-box;
-    }
-
-    input[type="password"] {
-        font-size: 1.1rem;
-        width: 100%;
-        padding: 16px;
-        box-sizing: border-box;
-    }
-
-    button {
-        font-size: 1.1rem;
-        padding: 12px 24px;
-    }
-
     .tab {
         flex-direction: column;
         align-items: center;
     }
 
     .tab button {
-        width: auto;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding: 12px 24px;
+        width: auto;
     }
 
     .tab-content {
         max-height: none;
-        height: 1000px;
+        height: auto;
         padding-bottom: 50px;
         width: 100%;
         overflow-y: auto;
