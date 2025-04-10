@@ -113,3 +113,20 @@ iframe {
     height: 520px;
     border: none;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #80caff; /* azul claro suave */
+}
+
+a p {
+    margin: 0;
+    color: inherit;
+}
