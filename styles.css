@@ -99,7 +99,7 @@ tr {
 }
 
 td {
-    width: 23%;
+    width: 30%;
     min-width: 250px;
     margin: 10px;
     text-align: center;
@@ -107,6 +107,7 @@ td {
     flex-direction: column;
     align-items: center;
 }
+
 
 iframe {
     width: 100%;
