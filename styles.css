@@ -112,13 +112,13 @@ td {
 /* Contenedor del iframe para permitir scroll interno */
 .iframe-wrapper {
     width: 100%;
-    height: 600px;
+    height: 800px; /* altura aumentada para desktop */
     overflow: auto;
     box-sizing: border-box;
     border-radius: 5px;
 }
 
-/* Iframe ocupa todo el contenedor */
+/* El iframe ocupa todo el contenedor */
 iframe {
     width: 100%;
     height: 100%;
@@ -144,13 +144,18 @@ a p {
     color: inherit;
 }
 
-/* 🎯 Responsive para tablets y celulares */
+/* Responsive para tablet */
 @media (max-width: 1024px) {
     td {
         width: 48%;
     }
+
+    .iframe-wrapper {
+        height: 650px;
+    }
 }
 
+/* Responsive para celular */
 @media (max-width: 600px) {
     td {
         width: 100%;
